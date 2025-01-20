@@ -6,6 +6,7 @@ sources:
     schema: analytics
     tables:
       - name: amazon_sales
+        description: Raw data table for Amazon sales
         columns:
           - name: index
             tests:
