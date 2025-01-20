@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: amazon
+    database: decent-trail-446502-e8
+    schema: analytics
+    tables:
+      - name: amazon_sales
+        columns:
+          - name: index
+            tests:
+              - unique
+              - not_null
+        #loaded_at_field: order_date
+        #freshness: 
+          #error_after: {count: 2, period: day}
+          #warn_after: {count: 1, period: day}
+        

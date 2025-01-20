@@ -4,4 +4,4 @@ select
   currency,
   Amount as order_amount
 from
-  `analytics.amazon_sales`
+  {{ source('amazon', 'amazon_sales') }}

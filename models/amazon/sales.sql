@@ -14,7 +14,7 @@ sales_location as(
 
 select
     oi.order_id,
-    oi.order_date,
+    timestamp(oi.order_date) as order_date,
     oi.order_status,
     oi.order_quantity,
     sl.currency,

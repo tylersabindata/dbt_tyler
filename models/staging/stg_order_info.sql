@@ -5,4 +5,4 @@ select
   Qty as order_quantity,
   case when `fulfilled-by` is null then 'Unknown' else `fulfilled-by` end as fulfilled_by
 from
-  `analytics.amazon_sales`
+  {{ source('amazon', 'amazon_sales') }}
