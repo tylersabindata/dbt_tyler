@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: stg_order_info
+    description: one unique order per row
+    columns:
+      - name: order_id
+        tests:
+          - not_null
