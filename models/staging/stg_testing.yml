@@ -5,6 +5,5 @@ models:
     description: one unique order per row
     columns:
       - name: order_id
-        description: '{{ doc("stg_testing") }}'
         tests:
           - not_null
